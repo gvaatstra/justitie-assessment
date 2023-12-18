@@ -12,6 +12,7 @@ describe("as a user", () => {
     const content = faker.lorem.lines(20);
     const tags = faker.word.words({ count: 3 }).split(" ");
 
+    //Use the API for speed as the functionality is tested in another spec
     await Apihelper.authentication.loginUser(
       "gerwin@detesters.nl",
       "wachtwoord"

@@ -15,7 +15,7 @@ describe("as a user", () => {
     await HomePage.navigation.assertSpecificUserLoggedIn(username);
   });
 
-  // logout is necessary due to webdriverio not having a clean context (like Playwright) for each test
+  // logout is necessary due to webdriverio not having a clean context for each test
   it("should be possible to log out", async () => {
     await HomePage.navigation.goToProfile();
     await ProfilePage.goToProfileSettings();
